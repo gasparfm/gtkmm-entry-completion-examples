@@ -15,12 +15,11 @@ You're free to use this example.
 
 ## Example 1 
 
-```
    Shows the simplest completion example. Just create a simple GUI: a box, a label, a button
    and the entry component.
    Entry completion is filled up with european countries. I wanted to show a customizable way
    to do it
-```
+
 
 To compile this example, just do:
 
@@ -35,15 +34,13 @@ more familiar with other Gtkmm examples.
 You can use this code if you already have created a model (e.g. for a Gtk::TreeView) and you want
 the user to autocomplete the Entry Fields with this data.
 
-## Example 1 
+## Example 2
 
-```
    Just a simple EntryCompletion class (now EasyCompletion) which uses its own Model to store Glib::ustring
    objects. Only if you want to make a simple completion. It allows being populated with a STL vector which
    makes it easy sometimes.
 
    But EasyCompletion class may be extended to support another string input methods.
-```
 
 It's useful if you want to create several Entry components with completion and don't want to be creating
 and maintaining models.
@@ -54,3 +51,9 @@ EasyCompletion class allows:
    - clearStrings () : clear all strings in the record
    - deleteString (Glib::ustring str) : search for str and deletes it (only once).
    - insertVector (std::vector<Glib::ustring> strVector, bool norepeat = true) : adds strings from a STL vector.
+
+To compile this example, just do:
+
+```
+g++ -o main main.cpp mainwindow.cpp easycompletion.cpp `pkg-config --libs --cflags gtkmm-3.0`
+```
