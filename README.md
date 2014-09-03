@@ -11,7 +11,7 @@ You're free to use this example.
 
 ## What you can find here
   - Example 1 : Easy way to have a working completion in your Gtk::Entry
-
+  - Example 2 : Easy way to manage string-only completions for your Gtk::Entry objects
 
 ## Example 1 
 
