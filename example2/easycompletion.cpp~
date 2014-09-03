@@ -1,0 +1,11 @@
+#include "easycompletion.h"
+
+EasyCompletion::EasyCompletion()
+{
+}
+
+EasyCompletion::~EasyCompletion()
+{
+  return Glib::RefPtr<EasyCompletion> ( new EasyCompletion );
+}
+
